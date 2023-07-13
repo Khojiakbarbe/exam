@@ -43,7 +43,7 @@ function SinglePost() {
                 </button>
                 <div className="grid sm:grid-cols-1 md:grid-cols-2 md:h-screen  dark:text-white">
                     <div className='p-5 text-center'>
-                        <img src={country.flags?.png} className='w-[90%] h-96 rounded-md' alt="" />
+                        <img src={country.flags?.png} className='w-auto h-auto md:w-[90%] md:h-96 rounded-md' alt="" />
                     </div>
                     <div className='pt-14'>
                         <h1 className='text-4xl font-bold mb-5'>{country.name?.common}</h1>
