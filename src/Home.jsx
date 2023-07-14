@@ -24,7 +24,7 @@ function Home() {
     async function getDate(region, skip, name) {
 
         try {
-            const res = await axios.get(`http://13.51.196.53:8080/countries?limit=${limit}&skip=${skip} &region=${region}&search=${name ? name : ''}`)
+            const res = await axios.get(`http://13.51.196.53:8080/countries?limit=${limit}&skip=${skip}&region=${region}&search=${name ? name : ''}`)
             const data = await res.data;
             setData(data)
             setRegione(region)
@@ -82,6 +82,7 @@ function Home() {
             })
         );
     }
+
 
 
 
